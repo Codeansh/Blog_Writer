@@ -16,3 +16,8 @@ def index():
             'body': 'The Avengers movie was so cool!'
         }]
     return render_template('index.html', user=user, posts=posts)
+
+
+@app_.route('/about')
+def about():
+    return "<h1>About us</h1>"
