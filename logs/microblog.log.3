@@ -1,0 +1,117 @@
+2022-02-12 13:01:33,638 ERROR: Exception on /register [GET] [in /home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/shivansh/shron/flaskblog/app/routes.py", line 72, in register
+    return render_template('register.html', title='Register', form=form)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shivansh/shron/flaskblog/app/templates/register.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bas.html
+2022-02-12 13:01:36,040 ERROR: Exception on /register [GET] [in /home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/shivansh/shron/flaskblog/app/routes.py", line 72, in register
+    return render_template('register.html', title='Register', form=form)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shivansh/shron/flaskblog/app/templates/register.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bas.html
+2022-02-12 13:01:36,740 ERROR: Exception on /register [GET] [in /home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/shivansh/shron/flaskblog/app/routes.py", line 72, in register
+    return render_template('register.html', title='Register', form=form)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shivansh/shron/flaskblog/app/templates/register.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bas.html
+2022-02-12 13:01:37,275 ERROR: Exception on /register [GET] [in /home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/shivansh/shron/flaskblog/app/routes.py", line 72, in register
+    return render_template('register.html', title='Register', form=form)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shivansh/shron/flaskblog/app/templates/register.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bas.html
+2022-02-12 13:01:50,816 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-02-17 12:56:19,088 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-02-17 13:00:59,101 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-02-17 13:17:21,616 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-02-17 13:22:26,332 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-02-17 13:23:22,915 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-02-17 13:23:45,968 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-02-17 13:24:20,861 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-02-17 13:27:21,726 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]

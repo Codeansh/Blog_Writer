@@ -1,0 +1,18 @@
+{
+  "python.formatting.provider": "black",
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "shron",
+      "database": "shron",
+      "username": "shivansh",
+      "password": "Shiv123#"
+    }
+  ]
+}
