@@ -1,7 +1,0 @@
-flask
-flask_bcrypt
-flask_sqlalchemy
-email_validator
-flask_wtf
-flask_mail
-pillow

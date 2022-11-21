@@ -1,0 +1,117 @@
+2022-02-17 13:27:29,693 ERROR: Exception on /login [GET] [in /home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/shivansh/shron/flaskblog/app/routes.py", line 57, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shivansh/shron/flaskblog/app/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/shivansh/shron/flaskblog/app/templates/base.html", line 34, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/shivansh/shron/flaskblog/app/templates/login.html", line 8, in block 'content'
+    {{ form.usernam.label }}<br>
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.LoginForm object' has no attribute 'usernam'
+2022-02-17 13:40:49,021 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-02-17 13:41:17,158 ERROR: Exception on /login [GET] [in /home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/shivansh/shron/flaskblog/app/routes.py", line 57, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shivansh/shron/flaskblog/app/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/shivansh/shron/flaskblog/app/templates/base.html", line 34, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/shivansh/shron/flaskblog/app/templates/login.html", line 8, in block 'content'
+    {{ form.usernam.label }}<br>
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.LoginForm object' has no attribute 'usernam'
+2022-02-17 13:41:20,489 ERROR: Exception on /login [GET] [in /home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/shivansh/shron/flaskblog/app/routes.py", line 57, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shivansh/shron/flaskblog/app/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/shivansh/shron/flaskblog/app/templates/base.html", line 34, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/shivansh/shron/flaskblog/app/templates/login.html", line 8, in block 'content'
+    {{ form.usernam.label }}<br>
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.LoginForm object' has no attribute 'usernam'
+2022-02-17 13:41:20,637 ERROR: Exception on /login [GET] [in /home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/shivansh/shron/flaskblog/app/routes.py", line 57, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/shivansh/shron/flaskblog/app/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/shivansh/shron/flaskblog/app/templates/base.html", line 34, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/shivansh/shron/flaskblog/app/templates/login.html", line 8, in block 'content'
+    {{ form.usernam.label }}<br>
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.LoginForm object' has no attribute 'usernam'

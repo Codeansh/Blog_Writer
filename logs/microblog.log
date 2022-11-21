@@ -1,0 +1,102 @@
+2022-02-19 14:41:30,070 ERROR: Exception on /reset_password_request [POST] [in /home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask_mail.py", line 188, in send
+    self.host.sendmail(sanitize_address(envelope_from or message.sender),
+  File "/usr/lib/python3.9/smtplib.py", line 872, in sendmail
+    self.ehlo_or_helo_if_needed()
+  File "/usr/lib/python3.9/smtplib.py", line 611, in ehlo_or_helo_if_needed
+    if not (200 <= self.ehlo()[0] <= 299):
+  File "/usr/lib/python3.9/smtplib.py", line 451, in ehlo
+    self.putcmd(self.ehlo_msg, name or self.local_hostname)
+  File "/usr/lib/python3.9/smtplib.py", line 378, in putcmd
+    self.send(f'{s}{CRLF}')
+  File "/usr/lib/python3.9/smtplib.py", line 365, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/shivansh/shron/flaskblog/app/routes.py", line 172, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/shivansh/shron/flaskblog/app/email.py", line 14, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "/home/shivansh/shron/flaskblog/app/email.py", line 10, in send_email
+    mail.send(msg)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "/usr/lib/python3.9/smtplib.py", line 1004, in quit
+    res = self.docmd("quit")
+  File "/usr/lib/python3.9/smtplib.py", line 431, in docmd
+    self.putcmd(cmd, args)
+  File "/usr/lib/python3.9/smtplib.py", line 378, in putcmd
+    self.send(f'{s}{CRLF}')
+  File "/usr/lib/python3.9/smtplib.py", line 365, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+2022-02-19 14:42:12,461 ERROR: Exception on /reset_password_request [POST] [in /home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask_mail.py", line 188, in send
+    self.host.sendmail(sanitize_address(envelope_from or message.sender),
+  File "/usr/lib/python3.9/smtplib.py", line 872, in sendmail
+    self.ehlo_or_helo_if_needed()
+  File "/usr/lib/python3.9/smtplib.py", line 611, in ehlo_or_helo_if_needed
+    if not (200 <= self.ehlo()[0] <= 299):
+  File "/usr/lib/python3.9/smtplib.py", line 451, in ehlo
+    self.putcmd(self.ehlo_msg, name or self.local_hostname)
+  File "/usr/lib/python3.9/smtplib.py", line 378, in putcmd
+    self.send(f'{s}{CRLF}')
+  File "/usr/lib/python3.9/smtplib.py", line 365, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/shivansh/shron/flaskblog/app/routes.py", line 172, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/shivansh/shron/flaskblog/app/email.py", line 14, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "/home/shivansh/shron/flaskblog/app/email.py", line 10, in send_email
+    mail.send(msg)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/shivansh/shron/flaskblog/myenv/lib/python3.9/site-packages/flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "/usr/lib/python3.9/smtplib.py", line 1004, in quit
+    res = self.docmd("quit")
+  File "/usr/lib/python3.9/smtplib.py", line 431, in docmd
+    self.putcmd(cmd, args)
+  File "/usr/lib/python3.9/smtplib.py", line 378, in putcmd
+    self.send(f'{s}{CRLF}')
+  File "/usr/lib/python3.9/smtplib.py", line 365, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+2022-02-19 14:43:26,381 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-02-19 20:56:59,198 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
