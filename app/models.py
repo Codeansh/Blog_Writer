@@ -1,18 +1,19 @@
 from datetime import datetime
-from werkzeug.security import generate_password_hash, check_password_hash
-from flask_login import UserMixin
-from app import db
-from app import login
 from hashlib import md5
 from time import time
-import jwt
-from app import app
 
+import jwt
+from flask_login import UserMixin
+from werkzeug.security import generate_password_hash, check_password_hash
+
+from app import app
+from app import db
+from app import login
 
 followers = db.Table('followers',
-    db.Column('follower_id', db.Integer, db.ForeignKey('user.id')),
-    db.Column('followed_id', db.Integer, db.ForeignKey('user.id'))
-)
+                     db.Column('follower_id', db.Integer, db.ForeignKey('user.id')),
+                     db.Column('followed_id', db.Integer, db.ForeignKey('user.id'))
+                     )
 
 
 class User(UserMixin, db.Model):
@@ -25,7 +26,7 @@ class User(UserMixin, db.Model):
     last_seen = db.Column(db.DateTime, default=datetime.utcnow)
 
     followed = db.relationship(
-        'User', secondary=followers, 
+        'User', secondary=followers,
         primaryjoin=(followers.c.follower_id == id),
         secondaryjoin=(followers.c.followed_id == id),
         backref=db.backref('followers', lazy='dynamic'), lazy='dynamic')
@@ -59,10 +60,10 @@ class User(UserMixin, db.Model):
     def followed_posts(self):
         followed = Post.query.join(
             followers, (followers.c.followed_id == Post.user_id)).filter(
-                followers.c.follower_id == self.id)
+            followers.c.follower_id == self.id)
         own = Post.query.filter_by(user_id=self.id)
         return followed.union(own).order_by(Post.timestamp.desc())
-        
+
     def get_reset_password_token(self, expires_in=600):
         return jwt.encode(
             {'reset_password': self.id, 'exp': time() + expires_in},
@@ -76,7 +77,8 @@ class User(UserMixin, db.Model):
         except:
             return
         return User.query.get(id)
-            
+
+
 @login.user_loader
 def load_user(id):
     return User.query.get(int(id))

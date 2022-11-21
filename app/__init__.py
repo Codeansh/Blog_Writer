@@ -1,23 +1,26 @@
-from flask import Flask,  copy_current_request_context
-from config import Config
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-from flask_login import LoginManager
 import logging
-from logging.handlers import SMTPHandler,RotatingFileHandler
 import os
-from flask_mail import Mail
-from flask_bootstrap import Bootstrap
-from flask_moment import Moment
-from flask_babel import Babel, lazy_gettext as _l
+from logging.handlers import SMTPHandler, RotatingFileHandler
+
+from flask import Flask
 from flask import request
+from flask_babel import Babel, lazy_gettext as _l
+from flask_bootstrap import Bootstrap
+from flask_login import LoginManager
+from flask_mail import Mail
+from flask_migrate import Migrate
+from flask_moment import Moment
+from flask_sqlalchemy import SQLAlchemy
+
+from config import Config
+
 base_dir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 app.config['BABEL_TRANSLATION_DIRECTORIES'] = os.path.join(base_dir, "app/translation")
 
 bootstrap = Bootstrap(app)
 app.config.from_object(Config)
-login =LoginManager(app)
+login = LoginManager(app)
 login.login_view = 'login'
 login.login_message = _l("User needs to be logged in to view this page")
 mail = Mail(app)
@@ -26,11 +29,14 @@ migrate = Migrate(app, db)
 moment = Moment(app)
 babel = Babel(app)
 
+
 @babel.localeselector
 def get_locale():
-    return 'es' #request.accept_languages.best_match(app.config['LANGUAGES'])
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+
 
 from app import routes, models, errors
+
 if not app.debug:
     if app.config['MAIL_SERVER']:
         auth = None
@@ -56,7 +62,7 @@ if not app.debug:
     app.logger.addHandler(file_handler)
 
     app.logger.setLevel(logging.INFO)
-    app.logger.info('Microblog startup')    
+    app.logger.info('Microblog startup')
 
 # @babel.localeselector
 # def get_locale():

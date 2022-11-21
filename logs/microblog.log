@@ -100,3 +100,5 @@ Traceback (most recent call last):
 smtplib.SMTPServerDisconnected: please run connect() first
 2022-02-19 14:43:26,381 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
 2022-02-19 20:56:59,198 INFO: Microblog startup [in /home/shivansh/shron/flaskblog/app/__init__.py:48]
+2022-07-23 18:50:09,039 INFO: Microblog startup [in /home/shivansh/shron/Apps/MyBlog/app/__init__.py:59]
+2022-07-23 18:50:12,797 INFO: Microblog startup [in /home/shivansh/shron/Apps/MyBlog/app/__init__.py:59]
